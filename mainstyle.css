@@ -79,3 +79,27 @@ header {
 .icon-item span {
   font-size: 14px;
 }
+
+.intro {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.intro-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #003b73;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
