@@ -12,9 +12,9 @@ body {
 }
 
 header {
-  background-color: #003b73;
-  padding: 15px;
+  background-color: white; /* fjerner blå baggrund */
 }
+
 
 .navbar {
   display: flex;
