@@ -20,3 +20,18 @@ const cardsContainer = document.querySelector("main.cards");
 const menuToggle = document.querySelector(".menu-toggle");
 const searchInput = document.querySelector(".search-bar input");
 
+function displayCards(filter) {
+  cardsContainer.innerHTML = "";
+
+    for (let i = 0; i < cardsData.length; i++) {
+    const card = cardsData[i];
+
+    if (filter === "All" || card.title === filter) {
+      const div = document.createElement("div");
+      div.classList.add("card");
+      div.innerHTML = `
+        <img src="${card.img}" alt="${card.title}">
+        <h3>${card.title}</h3>
+        <p>${card.description}</p>
+        <button class="btn">Læs mere</button>
+      `;
