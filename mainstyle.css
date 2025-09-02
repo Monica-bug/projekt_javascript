@@ -11,3 +11,71 @@ body {
   color: #333;
 }
 
+header {
+  background-color: #003b73;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+}
+
+.search-bar .search-btn {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.icon-item span {
+  font-size: 14px;
+}
