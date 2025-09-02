@@ -150,3 +150,20 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+  }
+}
