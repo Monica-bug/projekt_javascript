@@ -81,6 +81,29 @@ header {
   font-size: 14px;
 }
 
+.intro {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.intro-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #003b73;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
 /* inspirationskort */
 .cards {
   display: grid;
@@ -108,18 +131,21 @@ header {
   margin-bottom: 15px;
 }
 
+/* KNAP */
 .btn {
   background-color: #003b73;
   color: white;
   border: none;
   padding: 10px 15px;
-  margin-top: auto; /* sender knappen til bunden af kortet */
+  margin-top: auto;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 
-  .btn:hover {
-  background-color: #0059b3;
+footer {
+  text-align: center;
+  background-color: #003b73;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
 }
-
-
