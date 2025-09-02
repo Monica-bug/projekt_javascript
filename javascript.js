@@ -35,3 +35,43 @@ function displayCards(filter) {
         <p>${card.description}</p>
         <button class="btn">Læs mere</button>
       `;
+
+      div.querySelector(".btn").addEventListener("click", () => {
+        totalClicks++;
+        console.log(`Klik på ${card.title}-kort. Total klik: ${totalClicks}`);
+        console.log(`Gennemsnitlige klik pr. kort: ${(totalClicks / cardsData.length).toFixed(2)}`);
+      });
+
+      cardsContainer.appendChild(div);
+    }
+    
+// Første visning af alle kort
+displayCards(currentFilter);
+    
+      menuToggle.addEventListener("click", () => {
+  menuOpen = !menuOpen; // boolean variabel
+  console.log("Menu åben:", menuOpen);
+  document.querySelector(".navbar").classList.toggle("open");
+});
+
+      searchInput.addEventListener("input", (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  const filteredCards = cardsData.filter(card => card.title.toLowerCase().includes(searchTerm));
+
+  cardsContainer.innerHTML = ""; // ryd container
+  filteredCards.forEach(card => {
+    const div = document.createElement("div");
+    div.classList.add("card");
+    div.innerHTML = `
+      <img src="${card.img}" alt="${card.title}">
+      <h3>${card.title}</h3>
+      <p>${card.description}</p>
+      <button class="btn">Læs mere</button>
+    `;
+    div.querySelector(".btn").addEventListener("click", () => {
+      totalClicks++;
+      console.log(`Klik på ${card.title}-kort. Total klik: ${totalClicks}`);
+    });
+    cardsContainer.appendChild(div);
+  });
+});
